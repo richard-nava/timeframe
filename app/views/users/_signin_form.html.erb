@@ -1,0 +1,12 @@
+<%= form_with model: @user, method: "post", url: checkin_path do |form| %>
+
+  <div class="field">
+    <%= form.label :pin %>
+    <%= form.number_field :pin %>
+  </div>
+
+   <div class="actions">
+    <%= form.submit "Sign in" %>
+  </div>
+
+<% end %>
