@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lesson.name %>
+</p>
+
+<p>
+  <strong>Monday:</strong>
+  <%= @lesson.monday %>
+</p>
+
+<p>
+  <strong>Tuesday:</strong>
+  <%= @lesson.tuesday %>
+</p>
+
+<p>
+  <strong>Wednesday:</strong>
+  <%= @lesson.wednesday %>
+</p>
+
+<p>
+  <strong>Thursday:</strong>
+  <%= @lesson.thursday %>
+</p>
+
+<p>
+  <strong>Friday:</strong>
+  <%= @lesson.friday %>
+</p>
+
+<p>
+  <strong>Saturday:</strong>
+  <%= @lesson.saturday %>
+</p>
+
+<p>
+  <strong>Sunday:</strong>
+  <%= @lesson.sunday %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>

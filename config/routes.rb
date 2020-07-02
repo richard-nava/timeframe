@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  resources :attendances
+  resources :lessons
   root to: 'pages#home'
   
-  resources :users
+  resources :users do
+    resources :attendances
+  end
   resources :pages 
 
   get 'sign_in', action: :sign_in, controller: 'users'

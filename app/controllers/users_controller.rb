@@ -65,7 +65,7 @@ class UsersController < ApplicationController
     @user = User.find_by_pin(params[:pin])
     respond_to do |format|
       if @user
-        format.html { redirect_to @user, notice: 'Found you!'}
+        format.html { redirect_to new_user_attendance_path(@user), notice: 'Found you!'}
       else
         format.html { redirect_to sign_in_path, notice: 'No user found'}
       end
